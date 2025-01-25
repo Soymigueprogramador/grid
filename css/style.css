@@ -12,3 +12,37 @@ h1 {
     text-align: center;
     color: #fff;
 }
+
+.padre {
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: grid; /* display: grid; Define el tipo de display que vamos a usar. */
+    /* grid-template-columns: 150px 200px 300px;
+    
+        grid-template-columns: Indica la cantidad de columnas que vamos a tener y el tamaño de las mismas.
+    */
+    grid-template-rows: 300px 200px 120px;
+    /*
+        grid-template-rows: iNDICA EL ALTO QUE VA A TENER UNA FILA.
+    */
+    grid-template-columns: 1fr 2fr;
+    /*
+        grid-template-columns: 1fr 2fr;
+        En este caso cada "fr" representa una fraccion del contenedor padre, es decir que si tengo un contenedor de 100px
+        y hago grid-template-columns: 1fr 2fr; se le asigna un 33,33% a una fila y un 66,66% a la otro fila.
+        Esto tambien nos permite que sea responsive.
+        En este caso no es necesario hacer esto con las filas ya que la altura no se rompe.
+    */
+    
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    background-color: blue;
+    border: 2px solid #ffff;
+    border-radius: 4px;
+}
