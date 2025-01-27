@@ -7,6 +7,19 @@
     <title>Grid</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html"> inicio </a>
+                </li>
+                <li>
+                    <a href="./gridArea.html"> Grids por area </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <!--
         Grids: propiedades para el contenedor padre:
         1- display: grid; Indica que vamos a usar grid en css.
@@ -16,6 +29,8 @@
         5- grid-column-gap; Establece el tamaño de los huecos entre columnas (filas verticales).
         5- grid-rows-gap; Establece el tamaño de los huecos entre filas (lineas horizontales).
 .    -->
+    <mail>
+        <h1> Grids con lu y vero </h1>
 
     <section class="padre">
         <div></div>
@@ -23,5 +38,24 @@
         <div></div>
         <div></div>
     </section>
+
+    <!--
+        La etiqueta img contiene estos atributos
+        1- src="" Se usa para indicar la ruta de la imagen.
+        2- alt="" Se usa para mostrar un texto cuando la ruta de la imagen no funciona, tambien sirve para los lectores de pantalla.
+        3- width="" height="" Se usan para indicar el tamaño de la imagen en pixeles (Opcional).
+        4- title="" Se usa para mostrar un texto que aparece al pasar el mouse sobre la imagen.
+        5- loading="" Se usa para manejar ls imagenes.
+           loading="lazy" Retrasa la carga de la imagen hasta que la pantalla este sobre esa area.
+           loading="eager" Se usa para cargar la imagen de inmediato al abrir la pagina. 
+    -->
+    <img 
+        src="https://www.ole.com.ar/images/2024/11/20/o6ivPCV6t_1290x760__1.jpg"
+        alt="La bombonera"
+        width="300px" height="300px"
+        title="El templo sagrado del funtbol"
+        loading="eager"
+    >
+    </mail>
 </body>
 </html>
